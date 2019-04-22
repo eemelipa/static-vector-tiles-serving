@@ -1,0 +1,14 @@
+{
+  "name": "static-vector-tiles-serving",
+  "version": "1.0.0",
+  "description": "Serve generated tiles",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "start": "live-server --port=8000 --middleware=\"${PWD}/build/gzip.js\" --host=localhost build/www"
+  },
+  "author": "Eemeli Palotie",
+  "license": "ISC"
+}
